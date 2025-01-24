@@ -1,4 +1,356 @@
 *{
     margin: 0px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    color: #63bff5;
+    text-decoration: none;
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+}
+ul{
+    list-style: none;
+}
+.nav{
+    background: white;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.nav ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nav ul li a{
+    color: black;
+}
+.nav button{
+    background: transparent;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 50px;
+}
+.nav button img{
+    height: 12px;
+}
+.down{
+    background: url('./images/downn.jpeg');
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#moved{
+    position: relative;
+    background: rgba(0, 0, 0, 0.3);
+    height: 100%px;
+    color: white;
+    padding: 200px 45px 300px;
+}
+#moved h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+form{
+    position: sticky;
+    top: 0px;
+    margin: -270px auto 220px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    gap: 10px;
+    justify-content: space-evenly;
+    background: whitesmoke;
+    padding: 15px 0px;
+    border: 1px solid rgba(128, 128, 128, 0.6);
+    border-radius: 20px;
+    z-index: 1;
+}
+form input{
+    background-color: white;
+    width: 300px;
+    cursor: pointer;
+    font-size: larger;
+    padding: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.7);
+    border-radius: 10px;
+}
+form input[type = 'submit']{
+    padding: 10px;
+    width: 100px;
+    background: rgb(32,28,60);
+    color: white;
+}
+.message{
+    display: flex;
+    justify-content: space-between;
     padding: 20px;
+    margin: 0px auto;
+    width: 90%;
+    background: #201c3c;
+    border-radius: 20px;
+}
+.message img{
+    background: #aed1f3;
+    width: 20px;
+    padding: 8px 10px;
+    border-radius: 50%;
+}
+.message #icon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+.message button{
+    color: white;
+    cursor: pointer;
+    padding: 0px 15px;
+    background: transparent;
+    border: none;
+    border-radius: 20px;
+}
+.message button:hover{
+    background: rgba(255, 255, 255, 0.218);
+}
+.h1s{
+    color: #191e3b;
+    margin: 45px;
+}
+.places{
+    margin: 0px 45px;
+    display: flex;
+    overflow-x: auto;
+    justify-content: space-around;
+}
+.places .places-item{
+    border: 1px solid rgba(128, 128, 128, 0.238);
+    border-radius: 20px;
+    width: 260px;
+    height: 160px;
+}
+.places-item img{
+    cursor: pointer;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 260px;
+    height: 125px;
+}
+.places-item span{
+    padding-left: 10px;
+}
+.accomodate-places{
+    margin: 0px 45px;
+    display: flex;
+    overflow-x: auto;
+    justify-content: space-around;
+    gap: 20px;
+    
+}
+.accomodate-places .acc-item{
+    border: 1px solid rgba(128, 128, 128, 0.238);
+    border-radius: 20px;
+    cursor: pointer;
+    width: 200px;
+    height: 260px;
+}
+.acc-item img{
+    display: flex;
+    position: absolute;
+    border-radius: 20px;
+    width: 200px;
+    height: 260px;
+    filter: brightness(60%);
+}
+.acc-item span{
+    position: absolute;
+    margin: 230px 20px;
+    color: white;
+}
+
+#under{
+    margin: -40px 46px 30px;
+}
+
+.Browse{
+    margin: 0px 45px;
+    display: flex;
+    overflow-x: auto;
+    justify-content: space-between;
+}
+.Browse .br-item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+    width: 260px;
+    height: 360px;
+}
+.br-item img{
+    cursor: pointer;
+    border-radius: 20px;
+    width: 260px;
+    height: 200px;
+}
+.br-item span{
+    padding-left: 10px;
+}
+.br-item button{
+    background-color: #247c54;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.small{
+    font-size: smaller;
+}
+.finally{
+    display: grid;
+    margin: 30px 45px;
+    grid-template-columns: repeat(auto-fill, 580px);
+    cursor: pointer;
+}
+.final-item img{
+    border-radius: 15px;
+    width: 580px;
+}
+.final-item .small{
+    color: rgb(73, 73, 73);
+    margin-top: 10px;
+}
+#item{
+    width: 300px;
+}
+.card-item{
+    margin-top: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.269);
+    border-radius: 20px;
+    padding: 20px;
+    justify-content: space-evenly;
+    gap: 0px;
+    height: 241px;
+}
+.card-item .acc-item{
+    width: 180px;
+    height: 240px;
+}
+.card-item .acc-item img{
+    width: 180px;
+    height: 239px;
+}
+.card-item .acc-item span{
+    margin: 210px 20px;
+}
+.icon-contents{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,290px);
+    margin: 80px 46px;
+}
+.icon-contents .item{
+    margin: 20px 0px;
+}
+.icon-contents .item img{
+    width: 35px;
+}
+#s{
+    margin-top: 10px;
+    font-size: 16px;
+}
+.r-bg{
+    margin: 45px;
+}
+.r-bg img{ 
+    position: absolute;
+    border-radius: 40px;
+    width: 93%;
+    height: 87%;
+}
+.r-bg .rent{
+    position: relative;
+    color: #1c1d3c;
+    font-family: 'Times New Roman', Times, serif;
+    width: 310px;
+    height: 280px;
+    background: white;
+    padding: 30px;
+    margin-left: 100px;
+    border-radius: 20px;
+}
+.r-bg .rent p{
+    margin-top: 10px;
+}
+.r-bg .rent button{
+    margin-top: 20px;
+    width: 250px;
+    padding: 15px;
+    background: #1c1d3c;
+    font-size: large;
+    color: white;
+    border: none;
+    border-radius: 30px;
+}
+.word-content h1,
+.word-content2 h1{
+    margin: 25px 0px;
+}
+.word-content{
+    margin: 45px;
+    margin-top: 145px;
+    margin-bottom: -20px;
+}
+.word-content2{
+    margin: 45px;
+}
+.selection{
+    margin: 45px;
+}
+#sel-item{
+    display: flex;
+    color: #1d1d40;
+    font-size: 14px;
+    padding-bottom: 40px;
+    justify-content: space-between;
+}
+#sel-item img{
+    width: 20px;
+}
+footer{
+    margin-bottom: 50px;
+}
+footer img{
+    margin: 45px;
+}
+footer .multiple-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 45px;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+.multiple-links ul li{
+    padding-top: 20px;
+}
+.multiple-links ul li a{
+    color: #1f71e4;
+}
+.multiple-links ul li a:hover{
+    text-decoration: underline;
+}
+hr{
+    border: 1px solid rgba(128, 128, 128, 0.216);
+    margin: 40px;
+    width: 93%;
+}
+footer p{
+    margin-top: -10px;
+    text-align: center;
+    font-size: 12px;
 }
