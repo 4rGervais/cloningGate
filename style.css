@@ -2,6 +2,8 @@
     margin: 0px;
 }
 body{
+    width: 100%;
+    overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
 }
 a{
@@ -27,6 +29,9 @@ ul{
     gap: 20px;
     align-items: center;
     flex-wrap: wrap;
+}
+.nav img{
+    cursor: pointer;
 }
 .nav ul li a{
     color: black;
@@ -148,10 +153,8 @@ form input[type = 'submit']{
 .accomodate-places{
     margin: 0px 45px;
     display: flex;
-    overflow-x: auto;
     justify-content: space-around;
     gap: 20px;
-    
 }
 .accomodate-places .acc-item{
     border: 1px solid rgba(128, 128, 128, 0.238);
@@ -325,9 +328,12 @@ form input[type = 'submit']{
 }
 footer{
     margin-bottom: 50px;
+    background-color: rgba(128, 128, 128, 0.1);
 }
 footer img{
     margin: 45px;
+    height: 20px;
+    cursor: pointer;
 }
 footer .multiple-links{
     display: flex;
@@ -355,4 +361,87 @@ footer p{
     margin-top: -10px;
     text-align: center;
     font-size: 12px;
+}
+#stay{
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+}
+@media screen and (max-width: 950px) {
+    form{
+        position: relative;
+        margin-bottom: 50px;
+    }
+    form input[type = 'submit']{
+        width: 300px;
+    }
+    .finally{
+        width: 430px;
+        margin: 30px;
+    }
+    .final-item img{
+        width: 430px;
+    }
+    .r-bg img{
+        position: relative;
+    }
+    .r-bg .rent{
+        margin-left: 0px;
+    }
+    footer{
+        width: 100%;
+        margin: 0px;
+    }
+    footer .multiple-links{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .acc-item img{
+        position: relative;
+    }.acc-item span{
+        position: relative;
+        color: black;
+    }
+    .accomodate-places .acc-item{
+        border: none;
+    }
+    .accomodate-places{
+        width: 88%;
+        margin: 20px;
+        gap: 20px;
+        height: 300px;
+    }
+    .accomodate-places #item h1{
+        font-size: larger;
+    }
+    .accomodate-places #item{
+        width: 180px;
+    }
+    .card-item{
+        margin: 15px;
+        width: 84%;
+    }
+    .nav{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        /* height: 50px; */
+    }
+    .nav ul{
+        background-color: ;
+        padding: 0px;
+        font-size: small;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .nav img{
+        margin-left: auto;
+        margin-right: auto;
+        cursor: pointer;
+    }
+    .nav button{
+        padding: 8px;
+        border-radius: 14px;
+        background: rgba(128, 128, 128, 0.598);
+    }
 }
