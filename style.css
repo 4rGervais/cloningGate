@@ -214,12 +214,13 @@ form input[type = 'submit']{
 .finally{
     display: grid;
     margin: 30px 45px;
-    grid-template-columns: repeat(auto-fill, 580px);
+    grid-template-columns: repeat(auto-fill, 560px);
     cursor: pointer;
+    gap: 30px;
 }
 .final-item img{
     border-radius: 15px;
-    width: 580px;
+    width: 560px;
 }
 .final-item .small{
     color: rgb(73, 73, 73);
