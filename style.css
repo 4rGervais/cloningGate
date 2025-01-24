@@ -127,6 +127,7 @@ form input[type = 'submit']{
     display: flex;
     overflow-x: auto;
     justify-content: space-around;
+    gap: 20px;
 }
 .places .places-item{
     border: 1px solid rgba(128, 128, 128, 0.238);
@@ -181,7 +182,7 @@ form input[type = 'submit']{
     margin: 0px 45px;
     display: flex;
     overflow-x: auto;
-    justify-content: space-between;
+    gap: 20px;
 }
 .Browse .br-item{
     display: flex;
